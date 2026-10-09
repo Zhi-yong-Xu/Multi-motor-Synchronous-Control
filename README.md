@@ -8,11 +8,13 @@ Simulink simulation of synchronous control of multiple motors based on PMSM.
 先运行 `.m` 文件，然后运行任意 `.slx` 文件即可
 
 ### 文件介绍
-#### FOC_driver.epro --- 电机驱动电路
+#### `FOC_driver.epro` --- 电机驱动电路
 
 #### `motor_param.m` --- 电机和控制器参数文件
 
 #### `single_motor_FOC.slx` --- 单个电机的foc控制
+
+#### `single_motor_fix_vel.slx` --- 单个电机的固定时间速度控制（三角波负载）
 
 #### `sync_baseline.slx` --- 最基本的同步控制
 
