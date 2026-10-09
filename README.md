@@ -1,14 +1,19 @@
 # Multi-motor-Synchronous-Control
 Simulink simulation of synchronous control of multiple motors based on PMSM.
 
-### 版本说明
+## 版本说明
 请使用'MATLAB 2025b' 之后的版本
 
-### 运行说明
+## 运行说明
 先运行 `.m` 文件，然后运行任意 `.slx` 文件即可
 
-### 文件介绍
+# 文件介绍
+
+## 硬件控制
+
 #### `FOC_driver.epro` --- 电机驱动电路
+
+## 单电机simulink
 
 #### `motor_param.m` --- 电机和控制器参数文件
 
@@ -16,22 +21,14 @@ Simulink simulation of synchronous control of multiple motors based on PMSM.
 
 #### `single_motor_fix_vel.slx` --- 单个电机的固定时间速度控制（三角波负载）
 
-#### `sync_baseline.slx` --- 最基本的同步控制
-
-#### `ET_fix_FOC_sync.slx` --- 外环固定时间事件触发同步控制，内环FOC控制
-
-#### ET_fix_Current_sync.slx` --- 外环事件触发固定时间同步控制 + 内环速度PI控制 + 电流环固定时间动态面控制
-
-#### `ET_fix_all_sync.slx` --- 外环固定时间事件触发同步控制，内环固定时间动态面控制
-
 定义通用幂次符号函数：
 
 $$
 \text{sig}(x, a) = |x|^a \cdot \text{sgn}(x)
 $$
 
-## 速度环
-### 控制器
+### 速度环
+#### 控制器
 $$
  e_w = \bar{w} - w_{ref} 
 $$
@@ -51,7 +48,7 @@ $$
  u_{cmd} = J_m \dot{\bar{w}} + D_m \bar{w} - k_i \xi - k_w s - k_1 \text{sig}(s, 0.5) - k_2 \text{sig}(s, \vartheta) 
 $$
 
-### 符号含义
+#### 符号含义
 | 符号 | 含义 |
 | :---: | :--- |
 | $$w_{ref}$$ | 参考转速 |
@@ -62,8 +59,8 @@ $$
 | $$J_m, D_m$$ | 电机机械参数（转动惯量、阻尼系数） |
 | $$\lambda, \tau, \kappa, \alpha, k$$ | 控制器设计参数 |
 
-## 电流环
-### 控制器
+### 电流环
+#### 控制器
 $$
  e_z = z_q - i_{q,ref} 
 $$
@@ -80,7 +77,7 @@ $$
  V_d = L_d \left( k_{d1} \text{sig}(i_d, r_1) + k_{d2} \text{sig}(i_d, r_2) \right) + R_s i_d + L_q \omega_e i_q 
 $$
 
-### 符号含义
+#### 符号含义
 | 符号 | 含义 |
 | :---: | :--- |
 | $$i_{q,ref}$$ | q轴参考电流 |
@@ -92,5 +89,19 @@ $$
 | $$\omega_e$$ | 电角速度 |
 | $$\Phi$$ | 转子磁链 |
 | $$\lambda, \rho, k, r$$ | 控制器设计参数 |
+
+
+
+## 多电机同步控制
+
+#### `sync_baseline.slx` --- 最基本的同步控制
+
+#### `ET_fix_FOC_sync.slx` --- 外环固定时间事件触发同步控制，内环FOC控制
+
+#### `ET_fix_Current_sync.slx` --- 外环事件触发固定时间同步控制 + 内环速度PI控制 + 电流环固定时间动态面控制
+
+#### `ET_fix_all_sync.slx` --- 外环固定时间事件触发同步控制，内环固定时间动态面控制
+
+
 
 
