@@ -1,5 +1,5 @@
 # Multi-motor-Synchronous-Control
-Simulink simulation of synchronous control of multiple motors based on PMSM.
+Simulink of synchronous control of multiple Permanent Magnet Synchronous Motor (PMSM).
 
 ## 版本说明
 请使用 `MATLAB 2025b` 之后的版本
