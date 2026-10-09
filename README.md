@@ -19,9 +19,7 @@ FOC_driver.epro --- 电机驱动电路
 #### `ET_fix_all_sync.slx` --- 外环固定时间事件触发同步控制，内环固定时间动态面控制
 
 定义通用幂次符号函数：
-$$
- \text{sig}(x, a) = |x|^a \cdot \text{sgn}(x) 
-$$
+$ \text{sig}(x, a) = |x|^a \cdot \text{sgn}(x) $
 
 ## 速度环
 ### 控制器
