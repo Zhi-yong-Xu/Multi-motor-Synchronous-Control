@@ -15,11 +15,11 @@ Simulink simulation of synchronous control of multiple motors based on PMSM.
 
 ## 单电机simulink
 
-## `motor_param.m` --- 电机和控制器参数文件
+### `motor_param.m` --- 电机和控制器参数文件
 
-## `single_motor_FOC.slx` --- 单个电机的foc控制
+### `single_motor_FOC.slx` --- 单个电机的foc控制
 
-## `single_motor_fix_vel.slx` --- 单个电机的固定时间速度控制（三角波负载）
+### `single_motor_fix_vel.slx` --- 单个电机的固定时间速度控制（三角波负载）
 
 定义通用幂次符号函数：
 
@@ -91,7 +91,7 @@ $$
 | $$\lambda, \rho, k, r$$ | 控制器设计参数 |
 
 
-## `single_motor_fix_ob_vel.slx` --- 带有负载观测器的单个电机的固定时间速度控制（三角波负载）
+### `single_motor_fix_ob_vel.slx` --- 带有负载观测器的单个电机的固定时间速度控制（三角波负载）
 
 
 
@@ -181,13 +181,13 @@ $$
 
 ## 多电机同步控制
 
-## `sync_baseline.slx` --- 最基本的同步控制
+### `sync_baseline.slx` --- 最基本的同步控制
 
-## `ET_fix_FOC_sync.slx` --- 外环固定时间事件触发同步控制，内环FOC控制
+### `ET_fix_FOC_sync.slx` --- 外环固定时间事件触发同步控制，内环FOC控制
 
-## `ET_fix_Current_sync.slx` --- 外环事件触发固定时间同步控制 + 内环速度PI控制 + 电流环固定时间动态面控制
+### `ET_fix_Current_sync.slx` --- 外环事件触发固定时间同步控制 + 内环速度PI控制 + 电流环固定时间动态面控制
 
-## `ET_fix_all_sync.slx` --- 外环固定时间事件触发同步控制，内环固定时间动态面控制
+### `ET_fix_all_sync.slx` --- 外环固定时间事件触发同步控制，内环固定时间动态面控制
 
 
 
