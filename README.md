@@ -20,6 +20,8 @@ Simulink simulation of synchronous control of multiple motors based on PMSM.
 
 ### `single_motor_FOC.slx` --- 单个电机的foc控制
 
+### `single_motor_FOC_PWM.slx` --- 带有门控单元仿真的单个电机的foc控制
+
 ### `single_motor_fix_vel.slx` --- 单个电机的固定时间速度控制（三角波负载）
 
 定义通用幂次符号函数：
