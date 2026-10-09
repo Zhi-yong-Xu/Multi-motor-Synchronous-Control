@@ -13,9 +13,10 @@ Simulink simulation of synchronous control of multiple motors based on PMSM.
 
 ## `FOC_driver.epro` --- 电机驱动电路
 
+### `motor_param.m` --- 电机和控制器参数文件
+
 ## 单电机simulink
 
-### `motor_param.m` --- 电机和控制器参数文件
 
 ### `single_motor_FOC.slx` --- 单个电机的foc控制
 
