@@ -18,7 +18,7 @@ Simulink simulation of synchronous control of multiple motors based on PMSM.
 
 #### `ET_fix_FOC_sync.slx` --- 外环固定时间事件触发同步控制，内环FOC控制
 
-#### `Position_ET_fix_sync1.slx` --- 外环事件触发固定时间同步控制 + 内环固定时间动态面控制
+#### ET_fix_Current_sync.slx` --- 外环事件触发固定时间同步控制 + 内环速度PI控制 + 电流环固定时间动态面控制
 
 #### `ET_fix_all_sync.slx` --- 外环固定时间事件触发同步控制，内环固定时间动态面控制
 
