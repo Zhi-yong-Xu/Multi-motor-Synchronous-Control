@@ -8,13 +8,17 @@ Simulink simulation of synchronous control of multiple motors based on PMSM.
 先运行 `.m` 文件，然后运行任意 `.slx` 文件即可
 
 ### 文件介绍
-FOC_driver.epro --- 电机驱动电路
+#### FOC_driver.epro --- 电机驱动电路
 
-#### `single_motor.slx` --- 单个电机的foc控制
+#### `motor_param.m` --- 电机和控制器参数文件
+
+#### `single_motor_FOC.slx` --- 单个电机的foc控制
 
 #### `sync_baseline.slx` --- 最基本的同步控制
 
 #### `ET_fix_FOC_sync.slx` --- 外环固定时间事件触发同步控制，内环FOC控制
+
+#### `Position_ET_fix_sync1.slx` --- 外环事件触发固定时间同步控制 + 内环固定时间动态面控制
 
 #### `ET_fix_all_sync.slx` --- 外环固定时间事件触发同步控制，内环固定时间动态面控制
 
@@ -87,7 +91,4 @@ $$
 | $$\Phi$$ | 转子磁链 |
 | $$\lambda, \rho, k, r$$ | 控制器设计参数 |
 
-#### `Position_ET_fix_sync.slx` --- 外环事件触发固定时间同步控制 + 内环foc控制
-
-#### `Position_ET_fix_sync1.slx` --- 外环事件触发固定时间同步控制 + 内环固定时间动态面控制
 
