@@ -197,15 +197,15 @@ $$
 第 $i$ 个智能体的耦合误差为
 
 $$
-e_i=\sum_{j\sim i}\bigl(\hat\theta_i-\hat\theta_j\bigr)+B_{ii}\bigl(\hat\theta_i-\theta_0\bigr)
+E_i=\sum_{j\sim i}\bigl(\hat\theta_i-\hat\theta_j\bigr)+B_{ii}\bigl(\hat\theta_i-\theta_0\bigr)
 $$
 
 分布式观测器为
 
 $$
 \begin{aligned}
-\dot{\hat\theta}_i &= \hat\omega_i - c_1\,\mathrm{sig}(e_i,a_1) - c_2\,\mathrm{sig}(e_i,a_2)\\\\
-\dot{\hat\omega}_i &= -\,c_3\,\mathrm{sig}(e_i,a_3) - c_4\,\mathrm{sig}(e_i,a_4)
+\dot{\hat\theta}_i &= \hat\omega_i - c_1\,\mathrm{sig}(E,a_1) - c_2\,\mathrm{sig}(E_i,a_2)\\\\
+\dot{\hat\omega}_i &= -\,c_3\,\mathrm{sig}(E_i,a_3) - c_4\,\mathrm{sig}(E_i,a_4)
 \end{aligned}
 $$
 
@@ -213,9 +213,12 @@ $$
 以观测器给出的 $\hat\omega_i$ 作为前馈，叠加固定时间收敛项：
 
 $$
-\omega_{\mathrm{cmd},i}=\mathrm{sat}_{\pm 50}\!\Bigl(\hat\omega_i-k_1\,\mathrm{sig}(e_i,p_1)-k_2\,\mathrm{sig}(e_i,p_2)\Bigr)
+\omega_{\mathrm{cmd},i}=\mathrm{sat}_{ 50}\Bigl(\hat\omega_i-k_1\,\mathrm{sig}(e_i,p_1)-k_2\,\mathrm{sig}(e_i,p_2)\Bigr)
 $$
 
-
+其中：
+$$
+e_i=\sum_{j\sim i}\bigl(\theta_{m,i}-\theta_{m,j}\bigr)+B_{ii}\bigl(\theta_{m,i}-\theta_0\bigr)
+$$
 
 
