@@ -204,7 +204,7 @@ $$
 
 $$
 \begin{aligned}
-\dot{\hat\theta}_i &= \hat\omega_i - c_1\,\mathrm{sig}(e_i,a_1) - c_2\,\mathrm{sig}(e_i,a_2)\\[4pt]
+\dot{\hat\theta}_i &= \hat\omega_i - c_1\,\mathrm{sig}(e_i,a_1) - c_2\,\mathrm{sig}(e_i,a_2)\\\\
 \dot{\hat\omega}_i &= -\,c_3\,\mathrm{sig}(e_i,a_3) - c_4\,\mathrm{sig}(e_i,a_4)
 \end{aligned}
 $$
