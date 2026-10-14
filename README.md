@@ -217,6 +217,7 @@ $$
 $$
 
 其中：
+
 $$
 e_i=\sum_{j\sim i}\bigl(\theta_{m,i}-\theta_{m,j}\bigr)+B_{ii}\bigl(\theta_{m,i}-\theta_0\bigr)
 $$
