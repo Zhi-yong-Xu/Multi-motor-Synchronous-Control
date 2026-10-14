@@ -22,7 +22,7 @@ Simulink of synchronous control of multiple Permanent Magnet Synchronous Motor (
 
 ### `single_motor_FOC_PWM.slx` --- 带有门控单元仿真的单个电机的foc控制
 
-### `single_motor_fix_vel.slx` --- 单个电机的固定时间速度控制（三角波负载）
+### `single_motor_fix.slx` --- 单个电机的固定时间速度控制（三角波负载）
 
 定义通用幂次符号函数：
 
@@ -94,7 +94,7 @@ $$
 | $$\lambda, \rho, k, r$$ | 控制器设计参数 |
 
 
-### `single_motor_fix_ob_vel.slx` --- 带有负载观测器的单个电机的固定时间速度控制（三角波负载）
+### `single_motor_fix_ob.slx` --- 带有负载观测器的单个电机的固定时间速度控制（三角波负载）
 
 
 
@@ -186,11 +186,11 @@ $$
 
 ### `sync_baseline.slx` --- 最基本的同步控制
 
-### `ET_fix_FOC_sync.slx` --- 外环固定时间事件触发同步控制，内环FOC控制
+### `fix_FOC_sync.slx` --- 外环固定时间同步控制，内环FOC控制
 
-### `ET_fix_Current_sync.slx` --- 外环事件触发固定时间同步控制 + 内环速度PI控制 + 电流环固定时间动态面控制
+### `fix_Current_sync.slx` --- 外环固定时间同步控制 + 内环速度PI控制 + 电流环固定时间动态面控制
 
-### `ET_fix_all_sync.slx` --- 外环固定时间事件触发同步控制，内环固定时间动态面控制
+### `fix_all_sync.slx` --- 外环-内环固定时间动态面控制
 
 
 
